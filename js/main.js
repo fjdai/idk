@@ -54,8 +54,14 @@ function switchButton() {
 function moveButton() {
     var audio = new Audio('sound/Swish1.mp3');
     audio.play();
-    var x = Math.random() * 500;
-    var y = Math.random() * 400;
+    if (screen.width <= 600) {
+        var x = Math.random() * 200;
+        var y = Math.random() * 500;
+    } else {
+
+        var x = Math.random() * 500;
+        var y = Math.random() * 400;
+    }
     var left = x + 'px';
     var top = y + 'px';
     $('#no').css("left", left);
