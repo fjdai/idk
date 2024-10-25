@@ -56,7 +56,7 @@ function moveButton() {
     audio.play();
     if (screen.width <= 600) {
         var x = Math.random() * 200;
-        var y = Math.random() * 500;
+        var y = Math.random() * 300;
     } else {
 
         var x = Math.random() * 500;
